@@ -1,27 +1,155 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1{
-    text-align: center;
-    color: #ffffff;
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
+.header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: 0 auto;
 }
+.header-brand {
+  padding-left: 45px; /* Ajusta el valor según sea necesario */
+}
+
+@media (max-width: 420px) {
+    .header {
+      padding: 1.1rem;
+    }
+}
+#inicio .carrusel {
+  display: flex;
+  position: relative;
+  height: 100vh; /* Ajusta la altura del carrusel según sea necesario */
+  max-width: 70%;
+    left: 15%;
+}
+#inicio .carrusel .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+}
+#inicio .carrusel .info h2 {
+  color: black;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script';
+}
+#inicio .carrusel .info p {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script';
+}
+#inicio .carrusel .info button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: #212121;
+  border-radius: 25px;
+}
+.gallery {
+    width: 100%;
+    height: 95%;
+}
+.gallery-cell {
+    width: 100%;
+    height: 100%;
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    justify-content: center; /* Centra horizontalmente */
+}
+.gallery-cell img {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+.header-brand {
+    color: #FFF;
+    font-size: 3rem;
+  }
+  .header-navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 420) {
+    .header-navbar ul {
+      display: none;
+    }
+  }
+  .header-navbar ul li {
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .header-navbar ul li .active {
+    color: #20C997;
+  }
+  .header-navbar ul li a:hover {
+    color: #20C997;
+  }
+  .header-social-media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 45px;
+  }
+  @media screen and (max-width: 420) {
+    .header-social-media ul {
+      display: none;
+    }
+  }
+  .header-social-media ul li {
+    margin: 0 1rem;
+  }
+  .header-social-media ul li a:hover {
+    color: #FFF;
+  }
 footer{
     background-color: #2c2a2a; color: #ffffff;
     text-align: center;
     padding: 10px;
 }
-p{
+#fotos .pie p{
     color: #ffffff;
 }
+body a {
+    color: #777;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  body ul {
+    list-style: none;
+  }
 body{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,68,68,1) 35%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgb(14, 13, 13) 0%, rgb(65, 60, 60) 50%, rgb(14, 13, 13)100%);
+
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 }
 h1::before{
     content: "";
@@ -102,6 +230,10 @@ h1 span{
 .buttons a:hover {
     transform: scale(1.2);
   }
+
+#fotos {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(36, 33, 33) 50%, rgb(0, 0, 0)100%);
+}
 @media screen and (max-width:400px){
     h1{
         text-decoration: underline;
