@@ -15,4 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         pageDots: false,
         autoPlay: true
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 1ac534901a5e1b10fa99186a3bd268c004f95968
