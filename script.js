@@ -8,3 +8,11 @@ function openFulImg(reference){
 function closeImg(){
     fulImgBox.style.display = "none";
 }
+document.addEventListener('DOMContentLoaded', function () {
+    var elem = document.querySelector('.gallery');
+    var flkty = new Flickity(elem, {
+        wrapAround: true,
+        pageDots: false,
+        autoPlay: true
+    });
+});
