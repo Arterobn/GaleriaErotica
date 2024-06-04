@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="inicio">
+    <header class="header">
+        <a href="#" class="header-brand">  Galeria Erotica</a>
+        <nav class="header-navbar">
+            <ul>
+                <li>
+                    <a href="#inicio" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#fotos">Fotos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-social-media">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61556919600924&sk=about_contact_and_basic_info" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Arterobn8" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/arterobn8/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://w.app/Arternobn8" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="carrusel">
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+            <div class="gallery-cell">
+                <img src="imgs/20.jpg" alt="Imagen 20">
+           </div>
+            <div class="gallery-cell">
+                 <img src="imgs/15.jpg" alt="Imagen 15">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/14.jpg" alt="Imagen 14">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/12.jpg" alt="Imagen 12">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/11.jpg" alt="Imagen 11">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/10.jpg" alt="Imagen 10">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/9.jpg" alt="Imagen 9">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/8.jpg" alt="Imagen 8">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/7.jpg" alt="Imagen 7">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/5.jpg" alt="Imagen 5">
+            </div>
+            <div class="gallery-cell">
+                <img src="imgs/2.jpg" alt="Imagen 2">
+            </div>
+        </div>
+        <div class="info">
+            <h2>Imagenes sin censura</h2>
+            <p>Suscribete al Patreon para obtenerlas</p>
+            <button>Patreon</button>
+        </div>
+    </div>
+</section>
+<section id="fotos">
+    <br>
+    <br>
+    <div class="ful-img" id="fulImgBox">
+        <img src="imgs/1.jpg" id="fulImg" alt="Imagen Completa">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <a>
+        <img src="imgs/20.jpg" onclick="openFulImg(this.src)" alt="Imagen 20">
+        </a>
+        <a>
+        <img src="imgs/19.jpg" onclick="openFulImg(this.src)" alt="Imagen 19">
+        </a>
+        <a>
+        <img src="imgs/18.jpg" onclick="openFulImg(this.src)" alt="Imagen 18">
+        </a>
+        <a>
+        <img src="imgs/17.jpg" onclick="openFulImg(this.src)" alt="Imagen 17">
+        </a>
+        <a>
+        <img src="imgs/16.jpg" onclick="openFulImg(this.src)" alt="Imagen 16">
+        </a>
+        <a>
+        <img src="imgs/15.jpg" onclick="openFulImg(this.src)" alt="Imagen 15">
+        </a>
+        <a>
+        <img src="imgs/14.jpg" onclick="openFulImg(this.src)" alt="Imagen 14">
+        </a>
+        <a>
+        <img src="imgs/13.jpg" onclick="openFulImg(this.src)" alt="Imagen 13">
+        </a>
+        <a>
+        <img src="imgs/12.jpg" onclick="openFulImg(this.src)" alt="Imagen 12">
+        </a>
+        <a>
+        <img src="imgs/11.jpg" onclick="openFulImg(this.src)" alt="Imagen 11">
+        </a>
+        <a>
+        <img src="imgs/10.jpg" onclick="openFulImg(this.src)" alt="Imagen 10">
+        </a>
+        <a>
+        <img src="imgs/9.jpg" onclick="openFulImg(this.src)" alt="Imagen 9">
+        </a>
+        <a>
+        <img src="imgs/8.jpg" onclick="openFulImg(this.src)" alt="Imagen 8">
+        </a>
+        <a>
+        <img src="imgs/7.jpg" onclick="openFulImg(this.src)" alt="Imagen 7">
+        </a>
+        <a>
+        <img src="imgs/6.jpg" onclick="openFulImg(this.src)" alt="Imagen 6">
+        </a>
+        <a>
+        <img src="imgs/5.jpg" onclick="openFulImg(this.src)" alt="Imagen 5">
+        </a>
+        <a>
+        <img src="imgs/4.jpg" onclick="openFulImg(this.src)" alt="Imagen 4">
+        </a>
+        <a>
+        <img src="imgs/3.jpg" onclick="openFulImg(this.src)" alt="Imagen 3">
+        </a>
+        <a>
+        <img src="imgs/2.jpg" onclick="openFulImg(this.src)" alt="Imagen 2">
+        </a>
+        <a>
+        <img src="imgs/1.jpg" onclick="openFulImg(this.src)" alt="Imagen 1">
+        </a>
+    </div>
+    
+    <br>
+    <br>
+    <footer>
+        <div class="pie">
+            <p class="let">Derechos de autor &copy; 2024 - Arterobn8</p>
+        </div>
+    </footer>
+</section>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
